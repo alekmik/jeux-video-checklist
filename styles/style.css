@@ -1,23 +1,2 @@
-/* Story telling */
-body {
-  background-color: #141940;
-}
-p, h1, h2 {
-  color: #fff;
-  color: #FBAB2F;
-}
-.image{
-  width : 150px; height : 150px;
-  border: none;
-  border: 1px solid white;
-  -moz-border-radius : 10px;
-  -webkit-border-radius : 10px;
-  border-radius : 10px;
-}
-.image-ronde{
-  width : 150px; height : 150px;
-  border: none;
-  -moz-border-radius : 75px;
-  -webkit-border-radius : 75px;
-  border-radius : 75px;
-}
+
+
