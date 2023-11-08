@@ -1,4 +1,11 @@
+body {
+    background-color: #0B0E22;
+}
 
+h1, h2, legend, label, p {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
 
 /* carousel css */
 
@@ -23,3 +30,91 @@
     object-fit: cover;
 }
 /*fin carousel css*/
+
+
+
+/* start checklist */
+
+/* header with searchbar css */
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.logo .search-bar {
+    display: flex;
+    align-items: flex-end;
+    height: 3.5rem;
+}
+.logo input {
+    height: 2rem;
+}
+
+.logo button {
+    font-size: x-large;
+}
+/* end header with searchbar css */
+
+/* title css */
+.gameToDoChecklist{
+    display: block;
+    margin-top: 2rem;
+}
+/* end title css */
+
+.imageCoverGame {
+    width: 100%;
+}
+
+/* fieldest css */
+.gameToDoChecklist fieldset {
+    color: #fff;
+    display: flexbox;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 0 5%;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset div img {
+    width: 3rem;
+}
+
+fieldset label {
+    font-size: larger;  
+        
+}
+
+fieldset div {
+    padding-top: 1rem;
+}
+
+fieldset p{
+    padding-left: 5%;
+}
+
+fieldset {
+    padding-left: 5%;
+}
+
+fieldset input.larger {
+    width: 2rem;
+    height: 2rem;
+}
+/* fieldset div input:checked {
+    /* text-decoration: line-through;     background-color: chartreuse;
+}
+*/
+
+
+
+/* end fieldest css */
+
+/* test progress bar */
