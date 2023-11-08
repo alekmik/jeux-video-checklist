@@ -1,117 +1,16 @@
-/* Story telling */
-body {
-  background: linear-gradient(71deg, #080509, #1a171c, #080509);
-  margin: 1vw;
-}
-p, h1, h2, h3, ul, li {
-  color: rgba(221, 247, 204, 0.8);
-}
-
-.logo-test{
-  margin-left: 25%;
-  width: 50%;
-  height: auto;
-  /* border: 2px solid white; */
-}
-.section-content{
-  /* background-color: pink; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.display-content-market-illu{
-  width: 98vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  /* background-color: red; */
-}
-
-.image-gamer-presentation{
-  width: 45vw;
-  border: none;
-  margin-right: 2vw;
-}
-
-.card-image-contact{
-  width : 150px; height : 150px;
-  border: none;
-}
-
-.grid-card-team-members-mobile{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 98vw;
-  /* background-color: red; */
-}
-.card-profil-mobile{
-  /* background-color: rgb(29, 25, 25); */
-  width: 40%;
-  height: auto;
-  border: 1px solid rgb(64, 64, 174);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  margin: 4vw;
-}
-
-.info-name-contact-card-mobile{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.logo-linkedin-card-mobile {
-  width: 25%;
-  height: 25%;
-}
-
-
-.link-to-profile {
-  text-decoration: none;
-  color: rgba(221, 247, 204, 1);
-  font-size: 1.1rem;
-}
-
-
-/* CSS FOR DESKTOP VIEW */
-
-
-/* .card-title {
-  font-weight: 600;
-  color: white;
-  letter-spacing: -0.02em;
-  line-height: 2.1em;
-  font-style: normal;
-  font-size: 1.3em;
-  padding-bottom: 8px;
-}
-
-.card-description {
-  visibility: hidden;
-  /* font-weight: 500;
-  line-height: 2rem;
-  color: hsla(0, 0%, 100%, 0.8);
-  font-size: 1em;
-  max-width: 470px; 
-}
-
 .flip-card {
-  visibility: hidden;
-  /* background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #2c1b32b0;
-  border-radius: 10px;
-  perspective: 1000px; Remove this if you don't want the 3D effect 
+  /* display: inline; */
+  display: block;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  background-color: red;
 }
 .flip-card-inner {
+  /* display: inline; */
   position: relative;
   width: 100%;
   height: 100%;
@@ -120,26 +19,26 @@ p, h1, h2, h3, ul, li {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container 
+/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side 
+/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari 
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-.flip-card-front {
-  background: linear-gradient(71deg, #080509, #1a171c, #080509);
-}
-/* Style the back side 
+/* .flip-card-front {
+  background-color: transparent;
+} */
+/* Style the back side */
 .flip-card-back {
-  background: linear-gradient(71deg, #2c1b32, #1a171c, #080509);
-  /* background: linear-gradient(71deg, #080509,   #DDF7CC , #080509); 
+  /* background: linear-gradient(71deg, #2c1b32, #1a171c, #080509); */
+  /* background: linear-gradient(71deg, #080509,   #DDF7CC , #080509);  */
   color:  hsla(0, 0%, 100%, 0.8);
   transform: rotateY(180deg);
-} */
+} 

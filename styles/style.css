@@ -1,8 +1,47 @@
+/* body and general css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #0B0E22; */
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h3,
+ul,
+li {
+    color: rgba(221, 247, 204, 0.9);
+    line-height: 1.4em;
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+    color: white;
+}
+
+
+.logo-home {
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+    /* border: 2px solid white; */
+}
 
 /* carousel css */
 
-.slider-wrapper{
+.slider-wrapper {
     position: relative;
     place-content: center;
 }
@@ -13,7 +52,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0,75rem hsla(0, 0%, 0%, 0,25);
+    box-shadow: 0 1.5rem 3rem -0, 75rem hsla(0, 0%, 0%, 0, 25);
     border-radius: 0.5rem;
 }
 
@@ -22,4 +61,396 @@
     scroll-snap-align: start;
     object-fit: cover;
 }
+
 /*fin carousel css*/
+
+
+/* storytelling css */
+@counter-style thumbs {
+    system: cyclic;
+    symbols: " 🕹️";
+    /* //🎮 🖥️ */
+    suffix: " ";
+}
+
+.storytelling_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-content {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.platform-support {
+    color: rgba(221, 247, 204, 0.8);
+}
+
+.display-content-market-illu {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* background-color: red; */
+}
+
+.list-platform-available {
+    list-style-type: thumbs;
+    list-style-position: inside;
+
+}
+
+li {
+    padding-bottom: 1vh;
+}
+
+.image-gamer-presentation {
+    width: 45vw;
+    border: none;
+    margin-right: 2vw;
+}
+
+.content-description-website {
+    width: 90vw;
+    margin: 5vw;
+    text-align: center;
+}
+
+.content-description-website-desktop {
+    display: none;
+}
+
+.title-section-description-website-desktop {
+    display: none;
+}
+
+.content-tagline {
+    width: 80vw;
+    margin: 10vw;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+.card-image-contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 70%;
+    max-width: 90%;
+    border: none;
+}
+
+.grid-card-team-members-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+}
+
+.card-profil-mobile {
+    /* background-color: rgb(29, 25, 25); */
+    width: 40%;
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 4vw;
+}
+
+.gradient-card-mobile {
+    border: 1px solid #0000;
+    border-radius: 10px;
+    background:
+        linear-gradient(71deg, #080509, #2a262c, #080509) padding-box,
+        linear-gradient(#11FF00, #EE00FF) border-box;
+}
+
+.info-name-contact-card-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #EE00FF; */
+    padding-bottom: 2vh;
+}
+
+.logo-linkedin-card-mobile {
+    width: 8vw;
+    height: 8vw;
+}
+
+.link-to-profile {
+    text-decoration: none;
+    color: rgba(221, 247, 204, 1);
+    font-size: 1.1rem;
+}
+
+
+.flip-card {
+    display: none;
+}
+
+.content-title-team-members-desktop{
+    display: none;
+}
+
+
+/* fin storytelling css */
+
+/* CTA CSS */
+
+.container_Cta {
+    text-align: center;
+    padding: 2vh;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* not sure about this */
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cta-button {
+    background-color: #12193C;
+    color: white;
+    text-decoration: none;
+    padding: 1.2vh 3vw;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: solid 2px #11FF00;
+
+}
+
+
+.cta-button:hover {
+    background-color: #151D44;
+}
+
+/*fin cta css*/
+
+/* login css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: #0D122B;
+    border: solid 2px transparent;
+    padding: 3vh;
+    margin: 1vh;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.gradient {
+    border-image: linear-gradient(to top, #11FF00, #EE00FF) 1;
+}
+
+
+span {
+    color: #11FF00;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding: 1vh;
+    margin: 1vw 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #0D122B;
+    color: white;
+}
+
+button {
+    background-color: #12193C;
+    color: #fff;
+    border: solid 2px #11FF00;
+    padding: 1.2vh 3vw;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+button:hover {
+    background-color: #151D44;
+}
+
+.switch {
+    margin-top: 20px;
+    color: white;
+}
+
+/* end login css */
+
+
+/* Responsive CSS tablets */
+@media screen and ((768px <=device-width <=1024px)) {
+    .section-content {
+        margin-top: 5vh;
+    }
+}
+
+/* Responsive CSS Desktop */
+
+@media screen and ((width >=1024px)) {
+    .logo-home {
+        margin-left: 36%;
+        width: 28%;
+        height: auto;
+    }
+
+
+    .section-content {
+        margin-top: 10vh;
+    }
+
+    .platform-support {
+        color: rgba(221, 247, 204, 1);
+        font-size: 1.8em;
+        display: block;
+        margin-left: 10%;
+        /* background-color: blue; */
+        align-self: flex-start;
+    }
+
+    .image-gamer-presentation {
+        width: 30vw;
+        margin-right: 0;
+    }
+
+    .content-tagline {
+        width: 90vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        font-size: 2.2rem;
+    }
+
+    .content-description-website {
+        display: none;
+    }
+
+    .content-description-website-desktop {
+        display: block;
+        font-size: 1.3em;
+        /* height: auto; */
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: justify;
+        line-height: 2.5em;
+    }
+
+    .title-section-description-website-desktop {
+        display: inline;
+        font-size: 2.2em;
+        color: white;
+        margin-left: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .grid-card-team-members-mobile {
+        display: none;
+    }
+
+    .section-members {
+        padding-top: 5vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-title-team-members-desktop {
+        display: inline;
+        font-size: 2em;
+        color: white;
+    }
+
+    .grid-card-team-members-desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 95vw;
+        margin-top: 5vh;
+    }
+
+    .card-image-contact-desktop {
+        display: block;
+        width: 80%;
+        border: none;
+        margin: auto;
+    }
+
+    .logo-card-desktop {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .flip-card {
+        display: block;
+        width: 20vw;
+        height: 30vh;
+        text-align: center;
+        transition: transform 0.9s;
+        transform-style: preserve-3d;
+        /* border: solid 0.5px #11FF00;
+        border-radius: 10px; */
+        /*
+        seems dont work good with the transform
+        border: 1px solid #0000;
+        border-radius: 10px;
+        background:
+            linear-gradient(71deg, #080509, #2a262c, #080509) padding-box,
+            linear-gradient(#11FF00, #EE00FF) border-box; */
+    }
+
+    .flip-card-inner {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.9s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+        background: linear-gradient(71deg, #2c1b32, #1a171c, #130c15);
+        color: white;
+        transform: rotateY(180deg);
+    }
+}
