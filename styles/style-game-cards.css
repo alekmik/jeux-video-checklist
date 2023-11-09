@@ -1,4 +1,4 @@
-.card {
+/* .card {
     width: auto;
     margin: 10px;
     padding: 10px;
@@ -25,7 +25,52 @@ body{
     place-items:center;
     min-height: 98vh;
     
+} */
+
+
+body {
+    background-color: #0B0E22;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+    place-items: center;
+    /* min-height: 98vh; */
+    margin-top: 20vh;
 }
+
+.card {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.gradient {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top, #11FF00, #EE00FF) 1;
+    border-image-slice: 1;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .card img {
+        width: 200px;
+    }
+}
+
 
 
 
