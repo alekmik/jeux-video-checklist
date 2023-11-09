@@ -2,28 +2,26 @@ body {
     background-color: #0B0E22;
 }
 
+/* ajouter des classes pour éviter des conflits */
 h1, h2, legend, label, p {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
-/* carousel css */
+/* carousel css page */
 
 .slider-wrapper{
     position: relative;
     place-content: center;
 }
-
 .slider {
     display: flex;
-    aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0,75rem hsla(0, 0%, 0%, 0,25);
     border-radius: 0.5rem;
 }
-
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
@@ -31,90 +29,137 @@ h1, h2, legend, label, p {
 }
 /*fin carousel css*/
 
-
-
-/* start checklist */
-
-/* header with searchbar css */
+/* page presentation of one game + checklist of the success */
 .logo {
     display: flex;
     justify-content: space-around;
 }
-
 .logo img{
     width: 4rem;
 }
-
 .logo .search-bar {
     display: flex;
     align-items: flex-end;
     height: 3.5rem;
 }
 .logo input {
-    height: 2rem;
+    height: 2em;
 }
 
 .logo button {
     font-size: x-large;
 }
 /* end header with searchbar css */
-
-/* title css */
 .gameToDoChecklist{
     display: block;
     margin-top: 2rem;
 }
-/* end title css */
-
+.titleOfGame{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+.additionalInformation{
+    display: flex;
+    flex-direction: column;
+}
 .imageCoverGame {
     width: 100%;
 }
-
 /* fieldest css */
 .gameToDoChecklist fieldset {
     color: #fff;
-    display: flexbox;
-    justify-content: center;
     margin-top: 3rem;
     padding: 0 5%;
 }
-
 fieldset{
     border: 0;
+    padding-left: 5%;
 }
-
 fieldset div img {
     width: 3rem;
 }
-
 fieldset label {
-    font-size: larger;  
-        
+    font-size: larger;
 }
-
 fieldset div {
     padding-top: 1rem;
 }
-
 fieldset p{
     padding-left: 5%;
 }
-
-fieldset {
-    padding-left: 5%;
-}
-
 fieldset input.larger {
     width: 2rem;
     height: 2rem;
 }
-/* fieldset div input:checked {
-    /* text-decoration: line-through;     background-color: chartreuse;
+/* responsive tablet */
+@media (426px <= width <= 768px) {
+    /* input size */
+    .search-bar input{
+        width: 15em;
+        border: solid;
+    }
+    .additionalInformation{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
+        flex-direction: column;
+    }
+    .imageCoverGame{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 0 10%;
+    }
+    fieldset {
+        margin: 0 10%;
+    }
+    fieldset label {
+        font-size: x-large;
+    }
+    fieldset div {
+        margin-top: 2rem;
+    }
+    fieldset p {
+        margin-left: 12%;
+    }
 }
-*/
 
-
-
-/* end fieldest css */
-
-/* test progress bar */
+/* responsive desktop */
+@media (769px <= width <= 1440px) {
+    /* input size */
+    .logo{
+        display: flex;
+    }
+    .additionalInformation{
+        margin-left: 15%;
+    }
+    .search-bar input{
+        width: 15em;
+        border: solid;
+    }
+    /* Center the title of the game */
+    .titleOfGame{
+        display: flex;
+        justify-content: center;
+    }
+    .imageCoverGame{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    fieldset {
+        margin: 0 10%;
+    }
+    fieldset label {
+        font-size: x-large;
+    }
+    fieldset div {
+        margin-top: 2rem;
+    }
+    fieldset p {
+        margin-left: 5%;
+    }
+}
