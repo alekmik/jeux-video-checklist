@@ -20,9 +20,11 @@
 
 <body>
   <!-- Header -->
-  <section class="logo">
-    <img class="logo-home" src="./images/logo-canon.png"
-      alt="logo d'une manette avec symbole de zelda en arriere plan et laurier de succés sur les joysticks" />
+  <section class="nav-bar">
+    <a href="./index.html">
+      <img class="logo-home" src="./images/logo-canon.png"
+        alt="logo d'une manette avec symbole de zelda en arriere plan et laurier de succés sur les joysticks" />
+    </a>
   </section>
 
   <!-- Carrousel -->
@@ -30,12 +32,13 @@
     <!-- <h1>Carrousel</h1> -->
     <div class="slider-wrapper">
       <div class="slider">
-        <img id="slide-1" src="https://cdn.pixabay.com/photo/2017/08/10/06/06/controller-2618897_1280.jpg"
+        <img id="slide-1" class="img-slider"
+          src="https://cdn.pixabay.com/photo/2017/08/10/06/06/controller-2618897_1280.jpg"
           alt="image d'une manette de playstation 4 ">
-        <img id="slide-2"
+        <img id="slide-2" class="img-slider"
           src="https://images.pexels.com/photos/4009601/pexels-photo-4009601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="image">
-        <img id="slide-3"
+        <img id="slide-3" class="img-slider"
           src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="joueur jouant à un First-person shooter">
       </div>
@@ -47,8 +50,34 @@
     </div>
   </section>
 
+  
 
-
+  <div class="keys-words-home">
+    <svg viewbox="0 0 100 20">
+      <defs>
+        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="5%" stop-color="#326384"/>
+          <stop offset="95%" stop-color="#123752"/>
+        </linearGradient>
+        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+          <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+            <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="1.5s"
+                type="translate"
+                from="0,0"
+                to="40,0"
+                repeatCount="indefinite" />
+          </path>
+        </pattern>
+      </defs>
+      <text text-anchor="middle" x="50" y="15" font-size="22" fill="url(#wave)"  fill-opacity="0.6">IMMERSIF</text>
+      <text text-anchor="middle" x="50" y="15" font-size="22" fill="url(#gradient)" fill-opacity="0.1">IMMERSIF</text>
+    </svg>
+    <!-- <p class="content-tagline"> Solution de checklist </p>
+    <p class="content-tagline"> Sans pubs </p> -->
+  </div>
 
 
   <!-- Storytelling - histoire du site -->
@@ -60,18 +89,19 @@
       <div class="display-content-market-illu">
         <div class="content-info">
           <ul class="list-platform-available">
-            <li> Playstation </li>
-            <li> Steam </li>
-            <li> Nintendo </li>
-          </ul>
+            <li class="list-item-platform"> Playstation </li>
+            <li class="list-item-platform"> Steam </li>
+            <li class="list-item-platform"> Nintendo </li>
+            <img class="logo-platform-support"  src="./images/platform-support-black.png" />
 
-          <p> + de 1200 jeux au catalogue </p>
+          <p class="content-games-info"> + de 1200 jeux au catalogue </p>
         </div>
         <img src="./images/game-check.png" class="image-gamer-presentation" />
       </div>
     </div>
-    <p class="content-tagline"> Atteignez le 100 % en cochant step by step les succés à atteindre. </p>
-
+    <div class="section-tagline">
+    <p class="text-tagline"> Atteignez le 100 % en cochant step by step les succés à atteindre. </p>
+  </div>
     <!-- Call to action  -->
     <div class="container_Cta">
       <a href="screen/login.html" class="cta-button">Connexion</a>
@@ -149,13 +179,15 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="/images/panda-rouxgamer.png" alt="image panda qui joue tiens une manette dans les mains "
+            <img src="/images/pandagamer.png" alt="image panda qui joue tiens une manette dans les mains "
               class="card-image-contact-desktop gradient " />
           </div>
           <div class="flip-card-back">
-            <img class="logo-card-desktop" src="./images/logo-linkedin-transparent.png"
+            <img class="logo-card-desktop" src="./images/platinium-trophy.png"
               alt="logo linkedin redirigeant vers le profil d'Alek" />
             <h3> Alek </h3>
+            <p> Il a platine Marvel's Spider-Man</p>
+            <p> Il connait Manatthan par coeur maintenant.</p>
           </div>
         </div>
       </div>
@@ -166,9 +198,11 @@
               class="card-image-contact-desktop gradient " />
           </div>
           <div class="flip-card-back">
-            <img class="logo-card-desktop" src="./images/logo-github-transp-grey.png"
+            <img class="logo-card-desktop" src="./images/gold-trophy.png"
               alt="logo github redirigeant vers le profil dev d'Heidy" />
             <h3> Heidy </h3>
+            <p> Elle à passer plus de 350h dans Zelda.</p>
+            <p> Plus de besoin de map dans Hyrule !</p>
           </div>
         </div>
       </div>
@@ -179,9 +213,10 @@
               class="card-image-contact-desktop" />
           </div>
           <div class="flip-card-back">
-            <img class="logo-card-desktop" src="./images/logo-linkedin-transparent.png"
+            <img class="logo-card-desktop" src="./images/gold-trophy.png"
               alt="logo linkedin redirigeant vers le profil de Solène" />
             <h3> Solène </h3>
+            <p> Finit les jeux experimentaux et se perds dans les rpgs à tout jamais </p>
           </div>
         </div>
       </div>
