@@ -1,0 +1,33 @@
+/* css heidy */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0B0E22;
+    margin: 0;
+    padding: 0;
+}
+
+.container_Cta {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cta-button {
+    background-color: #12193C;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: solid 2px #11FF00;
+
+}
+
+.cta-button:hover {
+    background-color: #151D44;
+}
+
