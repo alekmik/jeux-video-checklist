@@ -127,7 +127,7 @@ fieldset input.larger {
 }
 
 /* responsive desktop */
-@media (769px <= width <= 1440px) {
+@media (769px <= width) {
     /* input size */
     .logo{
         display: flex;
