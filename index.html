@@ -8,30 +8,39 @@
   <title> Jeux vidéo checklist </title>
   <!-- Custom styles for this template -->
   <link href="styles/style.css" rel="stylesheet">
-  <link  href="styles/style1.css" rel="stylesheet">
-  <link href="styles/storytelling.css" rel="stylesheet">
-      <!---i just put a good ass font hehe----->
+  <!---i just put a good ass font hehe----->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
+    rel="stylesheet">
 
 
 </head>
 
 <body>
   <!-- Header -->
-  <section class="logo">
-    <img class="logo-test" src="./images/galer-avancement.png" alt="gamer et fleche" />
+  <section class="nav-bar">
+    <a href="./index.html">
+      <img class="logo-home" src="./images/logo-canon.png"
+        alt="logo d'une manette avec symbole de zelda en arriere plan et laurier de succés sur les joysticks" />
+    </a>
   </section>
 
   <!-- Carrousel -->
   <section class="carrousel">
-    <h1>Carrousel</h1>
+    <!-- <h1>Carrousel</h1> -->
     <div class="slider-wrapper">
       <div class="slider">
-        <img id="slide-1" src="https://cdn.pixabay.com/photo/2017/08/10/06/06/controller-2618897_1280.jpg" alt="image d'une manette de playstation 4 ">
-        <img id="slide-2" src="https://images.pexels.com/photos/4009601/pexels-photo-4009601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
-        <img id="slide-3" src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="joueur jouant à un First-person shooter">
+        <img id="slide-1" class="img-slider"
+          src="https://cdn.pixabay.com/photo/2017/08/10/06/06/controller-2618897_1280.jpg"
+          alt="image d'une manette de playstation 4 ">
+        <img id="slide-2" class="img-slider"
+          src="https://images.pexels.com/photos/4009601/pexels-photo-4009601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="image">
+        <img id="slide-3" class="img-slider"
+          src="https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="joueur jouant à un First-person shooter">
       </div>
       <div>
         <a href="#slide-1"></a>
@@ -41,87 +50,113 @@
     </div>
   </section>
 
+  
 
-
+  <div class="keys-words-home">
+    <svg viewbox="0 0 100 20">
+      <defs>
+        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="5%" stop-color="#326384"/>
+          <stop offset="95%" stop-color="#123752"/>
+        </linearGradient>
+        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+          <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+            <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="1.5s"
+                type="translate"
+                from="0,0"
+                to="40,0"
+                repeatCount="indefinite" />
+          </path>
+        </pattern>
+      </defs>
+      <text text-anchor="middle" x="50" y="15" font-size="22" fill="url(#wave)"  fill-opacity="0.6">IMMERSIF</text>
+      <text text-anchor="middle" x="50" y="15" font-size="22" fill="url(#gradient)" fill-opacity="0.1">IMMERSIF</text>
+    </svg>
+    <!-- <p class="content-tagline"> Solution de checklist </p>
+    <p class="content-tagline"> Sans pubs </p> -->
+  </div>
 
 
   <!-- Storytelling - histoire du site -->
-  <section class="storytelling_Prez">
-    <h2> A ceux qui try hard</h2>
+  <section class="storytelling_section">
+    <!-- <h2> A ceux qui try hard</h2> -->
+    <h2></h2>
     <div class="section-content">
-      <h3> Plateforme de jeux supportés : </h3>
+      <h3 class="platform-support"> Plateforme de jeux supportés : </h3>
       <div class="display-content-market-illu">
         <div class="content-info">
-          <ul>
-            <li> Playstation </li>
-            <li> Steam </li>
-            <li> Nintendo </li>
-          </ul>
+          <ul class="list-platform-available">
+            <li class="list-item-platform"> Playstation </li>
+            <li class="list-item-platform"> Steam </li>
+            <li class="list-item-platform"> Nintendo </li>
+            <img class="logo-platform-support"  src="./images/platform-support-black.png" />
 
-          <p> + de 1200 jeux au catalogue </p>
+          <p class="content-games-info"> + de 1200 jeux au catalogue </p>
         </div>
-        <img src="./images/game-check.png" class="image-gamer-presentation"/>
+        <img src="./images/game-check.png" class="image-gamer-presentation" />
       </div>
     </div>
-    <p> Nous vous proposons une solution de checklist simple pour enfin déverouiller tous les trophées de vos jeux
+    <div class="section-tagline">
+    <p class="text-tagline"> Atteignez le 100 % en cochant step by step les succés à atteindre. </p>
+  </div>
+    <!-- Call to action  -->
+    <div class="container_Cta">
+      <a href="screen/login.html" class="cta-button">Connexion</a>
+    </div>
+
+    <p class="content-description-website"> Nous vous proposons une solution de checklist simple pour enfin déverouiller
+      tous les trophées de vos jeux
       favoris. </p>
-    <p> Atteignez le 100 % en cochant step by step les succés à atteindre. </p>
-
-
-
-
-
 
     <!--  description plus longue si necessaire pour la page web -->
 
-    <!-- <p>Nous sommes partis du triste constat que les sites répertoriant 
-      les solutions, les listes des succés à dévérouiller et autres plaisirs sont tous devenus d'énormes plateforme. 
-      Des news par-ci, des pubs par là, une vidéo ici, tiens là un tuto. 
-      Bref en tant que joueur si vous êtes déjà passer par un site comme ça, vous savez qu'il est difficile de faire abstraction 
-      de toutes les infos parfois polluante alors que l'on cherche une seule information précise.</p>
+    <p class="content-description-website-desktop">Nous sommes partis du triste constat que les sites répertoriant
+      les solutions, les listes des succès à dévérouiller et autres plaisirs sont tous devenus d'énormes plateformes.
+      Des news par-ci, des pubs par là, une vidéo ici, tiens là un tuto.
+      Bref en tant que joueur si vous êtes déjà passé par un site comme ça, vous savez qu'il est difficile de faire
+      abstraction
+      de toutes les infos parfois polluantes alors que l'on cherche une seule information précise.</p>
 
-    <h2> Notre volonté ?</h2>
-      <p> Que les joueurs, les try hardeurs particulièrement, qui souhaitent terminer leur jeux a 100 % puissent le faire à l'aide d'une
-         checklist pour avancé dans ses succès.</p> -->
+    <h2 class="title-section-description-website-desktop"> Notre volonté ?</h2>
+    <p class="content-description-website-desktop"> Que les joueurs, les try hardeurs particulièrement, qui souhaitent
+      terminer leur jeux à 100 % puissent le faire à l'aide d'une
+      checklist pour avancer dans ses succès.</p>
 
-    <!-- <h2> Pour qui ? </h2>
-
-    <div>
-      <img src="/images/panda-rouxgamer.png" class="card-image">
-      <img src="/images/pandagamer.png" class="card-image">
-      <img src="/images/pingugamer.png" class="card-image">
-      <img src="/images/shibagamer.png" class="card-image">
-    </div>
-    <p> Peu importe ton style de jeu, peu importe la platerforme, tu es ici chez toi.
+    <p class=" content-description-website-desktop"> Peu importe ton style de jeu, ou la platerforme, tu es ici chez
+      toi.
       Décores les murs, choisis tes jeux favoris,
-      link tes comptes playstation, steam ou nintendo à TryArd, et atteint le 100 %
-    </p> -->
+      link tes comptes playstation, steam ou nintendo à TryArd, et atteint le 100 % !
+    </p>
 
     <div class="grid-card-team-members-mobile">
-      <div class="card-profil-mobile">
+
+      <div class="card-profil-mobile gradient-card-mobile">
         <a class="link-to-profile" href="https://www.linkedin.com/in/alekmikolajek/">
           <img src="./images/pandagamer.png" alt="image panda qui joue tiens une manette dans les mains "
             class="card-image-contact">
           <div class="info-name-contact-card-mobile">
             <img class="logo-linkedin-card-mobile" src="./images/logo-linkedin-transparent.png"
               alt="logo linkedin redirigeant vers le profil d'Alek" />
-            <h3> Alex </h3>
+            <h3> Alek </h3>
           </div>
         </a>
       </div>
 
-      <div class="card-profil-mobile">
+      <div class="card-profil-mobile gradient-card-mobile">
         <a class="link-to-profile" href="https://github.com/gvara23">
           <img src="./images/shibagamer.png" alt="image d'un shiba qui joue tiens une manette dans les mains "
             class="card-image-contact">
           <div class="info-name-contact-card-mobile">
-            <img class="logo-linkedin-card-mobile" src="./images/logo-github-transparent.png"
-              alt="logo linkedin redirigeant vers le profil d'Heïdi" />
+            <img class="logo-linkedin-card-mobile" src="./images/logo-github-transp-grey.png"
+              alt="logo github redirigeant vers le profil dev d'Heidy" />
             <h3> Heidy </h3>
           </div>
         </a>
       </div>
-      <div class="card-profil-mobile">
+      <div class="card-profil-mobile gradient-card-mobile">
         <a class="link-to-profile" href="https://www.linkedin.com/in/solene-mahaut/">
           <img src="./images/pingugamer.png" alt="image d'un pingouin qui joue tiens une manette dans les mains "
             class="card-image-contact">
@@ -135,31 +170,62 @@
     </div>
 
     <!-- -- card web view -->
-    <!-- <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="/images/panda-rouxgamer.png" alt="image panda qui joue tiens une manette dans les mains "
-            class="card-image">
-        </div>
-        <div class="flip-card-back">
-          <h1>Alek </h1>
-          <p>Gamer & Engineer</p>
-          <p> lien github</p>
-          <p> lien linkedin https://www.linkedin.com/in/alekmikolajek/</p>
+    <div class="section-members">
+      <h3 class="content-title-team-members-desktop"> Rencontre la team !</h3>
+    </div>
+    <div class="grid-card-team-members-desktop">
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images/pandagamer.png" alt="image panda qui joue tiens une manette dans les mains "
+              class="card-image-contact-desktop gradient " />
+          </div>
+          <div class="flip-card-back">
+            <img class="logo-card-desktop" src="./images/platinium-trophy.png"
+              alt="logo linkedin redirigeant vers le profil d'Alek" />
+            <h3> Alek </h3>
+            <p> Il a platine Marvel's Spider-Man</p>
+            <p> Il connait Manatthan par coeur maintenant.</p>
+          </div>
         </div>
       </div>
-    </div> -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images/shibagamer.png" alt="image d'un shiba qui joue tiens une manette dans les mains "
+              class="card-image-contact-desktop gradient " />
+          </div>
+          <div class="flip-card-back">
+            <img class="logo-card-desktop" src="./images/gold-trophy.png"
+              alt="logo github redirigeant vers le profil dev d'Heidy" />
+            <h3> Heidy </h3>
+            <p> Elle à passer plus de 350h dans Zelda.</p>
+            <p> Plus de besoin de map dans Hyrule !</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./images/pingugamer.png" alt="image d'un pingouin qui joue tiens une manette dans les mains "
+              class="card-image-contact-desktop" />
+          </div>
+          <div class="flip-card-back">
+            <img class="logo-card-desktop" src="./images/gold-trophy.png"
+              alt="logo linkedin redirigeant vers le profil de Solène" />
+            <h3> Solène </h3>
+            <p> Finit les jeux experimentaux et se perds dans les rpgs à tout jamais </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- <p class="card-description"> Peu importe ton style de jeu, peu importe la platerforme, tu es ici chez toi.
-      Décores les murs, choisis tes jeux favoris,
-      link tes comptes playstation, steam ou nintendo à TryArd, et atteint le 100 %</p> -->
+    </div>
+
 
   </section>
 
-  <!-- Call to action  -->
-  <div class="container_Cta">
-    <a href="screen/login.html" class="cta-button">Log in</a>
-</div>
 
 </body>
 

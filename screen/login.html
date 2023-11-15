@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
-    <link rel="stylesheet" href="../styles/style2.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!---i just added the css----->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +12,26 @@
     <!---i just put a good ass font hehe----->
 </head>
 <body>
+    <section class="nav-bar">
+        <a href="../index.html">
+          <img class="logo-home" src="../images/logo-canon.png"
+            alt="logo d'une manette avec symbole de zelda en arriere plan et laurier de succés sur les joysticks" />
+        </a>
+      </section>
     <!---Making the box for the log in inofrmation needed----->
-    <div class="container">
+    <div class="container login-section">
         <form class="box gradient">
-            <h2>Log in</h2>
+            <h2>Connexion</h2>
             <input type="email" placeholder="Email Adress" required autocomplete="username">
             <input type="password" placeholder="Password" required autocomplete="current-password">
             <!-- onclick="toLogged('game-cards.html')" -->
             <a href="../screen/game-cards.html"> <p>coucou </p></a>
-            <button type="submit" >Log in</button>
-            <p class="switch">¿Forgot your Password? <span>Click here</span></p>
+            <button type="submit" >se connecter</button>
+            <p class="switch">Mot de passe oublié? <span>Clique ici</span></p>
         </form>
         <!---i did a cta button for the sig in but i dont think is useful? need to check this again----->
         <div class="container_sigin">
-            <a href="sigin.html" class="cta-button">Sig in</a>
+            <a href="sigin.html" class="cta-button">S'inscrire</a>
         </div>
 
     </div>
