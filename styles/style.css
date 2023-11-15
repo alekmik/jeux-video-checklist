@@ -63,6 +63,24 @@ h1, h2, legend, label, p {
     display: flex;
     flex-direction: column;
 }
+
+.linkBuyProduct{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.linkBuyProduct a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.linkBuyProduct img {
+    width: 5rem;
+}
+
 .imageCoverGame {
     width: 100%;
 }
