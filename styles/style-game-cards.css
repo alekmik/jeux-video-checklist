@@ -1,54 +1,29 @@
-/* .card {
-    width: auto;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.gradient {
-    border-image: linear-gradient(to top, #11FF00, #EE00FF) 1;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-
-body{
-    background-color: #0B0E22;
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    gap: 1rem;
-    place-items:center;
-    min-height: 98vh;
-    
-} */
-
-
 body {
-    background-color: #0B0E22;
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 1rem;
-    place-items: center;
-    /* min-height: 98vh; */
-    margin-top: 20vh;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20vh; 
 }
 
-.card {
-    width: auto;
-    margin: 10px;
-    padding: 10px;
+.display-games-fav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-cover-game {
+    width: 80%;
+    margin-bottom: 5%;
+    padding: 1%;
     cursor: pointer;
     border: 2px solid transparent;
 }
 
-.card img {
+.img-cover-game{
     width: 100%;
-    height: auto;
+    height: auto; 
 }
 
 .gradient {
@@ -57,7 +32,7 @@ body {
     border-image-slice: 1;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and ((600x <= device-width <=1024px)) {
     body {
         grid-template-columns: repeat(2, 50%);
     }
@@ -69,7 +44,54 @@ body {
     .card img {
         width: 200px;
     }
+
+    .display-games-fav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
+
+/* Responsive CSS Desktop */
+
+@media screen and ((width >=1024px)) {
+
+    body {
+        margin-bottom: 10vh; 
+    }
+
+    .display-games-fav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .card-cover-game {
+        width: 35vw;
+        margin-bottom: 5vh;
+        padding: 1%;
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+    
+    .img-cover-game{
+        width: 100%;
+        height: auto; 
+        border-radius: 1vw;
+    }
+
+    .gradient {
+        border: 2px solid transparent;
+        border-image: linear-gradient(to top, #11FF00, #EE00FF) 1;
+        border-image-slice: 1;
+    }
+
+}
+
 
 
 

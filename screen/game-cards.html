@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleGames.css">
     <link rel="stylesheet" type="text/css" href="../styles/style-game-cards.css">
 </head>
+
 <body>
-<!---i did the go to game function so we can connect the checklist with images, need to check ----->
-    <div class="card gradient" onclick="goToGame('game1.html')">
-        <img src="../images/gaame1.jpg" alt="Game 1">
-    </div>
+    <!-- Header -->
+    <section class="nav-bar">
+        <a href="../index.html">
+            <img class="logo-home" src="../images/logo-canon.png"
+                alt="logo d'une manette avec symbole de zelda en arriere plan et laurier de succés sur les joysticks" />
+        </a>
+        <div class="search-bar">
+            <input type="text">
+            <button>🔎</button>
+        </div>
+    </section>
+    <div class="display-games-fav">
+        <!---i did the go to game function so we can connect the checklist with images, need to check ----->
+        <div class="card-cover-game gradient" onclick="goToGame('feature-checklist-game-ghost-of-tsushima.html')">
+            <img class="img-cover-game" src="../images/gaame1.jpg" alt="Game 1">
+        </div>
 
-    <div class="card gradient" onclick="goToGame('game2.html')">
-        <img src="../images/game2.jpg" alt="Game 2">
-    </div>
+        <div class="card-cover-game gradient" onclick="goToGame('feature-checklist-game-assassins-creed-valhalla.html')">
+            <img class="img-cover-game" src="../images/game2.jpg" alt="Game 2">
+        </div>
 
-    <div class="card gradient" onclick="goToGame('game3.html')">
-        <img src="../images/screen-3.webp" alt="Game 3">
-    </div>
+        <div class="card-cover-game gradient" onclick="goToGame('feature-checklist-game-deadpool.html')">
+            <img class="img-cover-game" src="../images/screen-3.webp" alt="Game 3">
+        </div>
 
-    <div class="card gradient" onclick="goToGame('../screen/feature-checklist-game.html')">
-        <img src="../images/spiderman.jpg" alt="Game 4">
+        <div class="card-cover-game gradient" onclick="goToGame('feature-checklist-game-spiderman2.html')">
+            <img class="img-cover-game" src="../images/spiderman.jpg" alt="Game 4">
+        </div>
     </div>
 
     <script src="../script/script.js"></script>
 </body>
+
 </html>

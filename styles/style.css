@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #0B0E22; */
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
     display: flex;
     flex-direction: column;
@@ -16,6 +15,27 @@ body {
     padding: 0;
 }
 
+p,
+h3,
+ul,
+li {
+    color: rgba(221, 247, 204, 0.9);
+    line-height: 1.4em;
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+    color: white;
+}
+
+.logo-home {
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+    /* border: 2px solid white; */
+}
 
 /* carousel css page */
 
@@ -23,6 +43,7 @@ body {
     position: relative;
     place-content: center;
 }
+
 .slider {
     display: flex;
     overflow-x: auto;
@@ -31,6 +52,7 @@ body {
     box-shadow: 0 1.5rem 3rem -0, 75rem hsla(0, 0%, 0%, 0, 25);
     border-radius: 0.5rem;
 }
+
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
@@ -329,11 +351,14 @@ button:hover {
 /* Responsive CSS Desktop */
 
 @media screen and ((width >=1024px)) {
+    body {
+        margin-bottom: 5%;
+    }
 
     .nav-bar {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .logo-home {
@@ -344,10 +369,6 @@ button:hover {
 
 
     .slider {
-        /* aspect-ratio: 16 / 9; */
-        /* scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        overflow-x: auto; */
         height: 65vh;
         width: 80vw;
         margin-left: 10vw;
@@ -394,7 +415,6 @@ button:hover {
         font-size: 1.8em;
         display: block;
         margin-left: 10%;
-        /* background-color: blue; */
         align-self: flex-start;
     }
 
@@ -411,7 +431,8 @@ button:hover {
         font-size: 2.1em;
         margin-left: 10vw;
     }
-    .section-tagline{
+
+    .section-tagline {
         max-height: 10vh;
     }
 
@@ -430,7 +451,6 @@ button:hover {
     .content-description-website-desktop {
         display: block;
         font-size: 1.3em;
-        /* height: auto; */
         width: 90vw;
         margin-left: 5vw;
         margin-right: 5vw;
@@ -491,15 +511,6 @@ button:hover {
         text-align: center;
         transition: transform 0.9s;
         transform-style: preserve-3d;
-        /* border: solid 0.5px #11FF00;
-        border-radius: 10px; */
-        /*
-        seems dont work good with the transform
-        border: 1px solid #0000;
-        border-radius: 10px;
-        background:
-            linear-gradient(71deg, #080509, #2a262c, #080509) padding-box,
-            linear-gradient(#11FF00, #EE00FF) border-box; */
     }
 
     .flip-card-inner {
