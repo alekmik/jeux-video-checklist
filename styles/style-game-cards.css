@@ -24,6 +24,7 @@ body {
 .img-cover-game{
     width: 100%;
     height: auto; 
+    border-radius: 1vw;
 }
 
 .card-cover-game, .gradient {
@@ -77,7 +78,7 @@ body {
     .card-cover-game {
         width: 20vw;
         margin-bottom: 5vh;
-        padding: 0.5%;
+        padding: 0.3%;
         cursor: pointer;
         border: 2px solid transparent;
     }
@@ -85,7 +86,7 @@ body {
     .img-cover-game{
         width: 100%;
         height: auto; 
-        /* border-radius: 1vw; */
+        border-radius: 1vw;
     }
 
     .card-cover-game, .gradient {
