@@ -37,6 +37,55 @@ body {
     margin-right: 1em;
 }
 
+
+
+/* Alek : CSS profil utilisateur */
+.userProfilSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12em;
+    margin-bottom: 4rem;
+}
+.userProfilSection img{
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
+}
+
+.title-underline{
+    text-decoration: underline;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.featured-posts, .featured-posts article, .featured-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featured-posts article a{
+    text-decoration: underline;
+}
+
+
+.userProfilSection h1, .featured-posts h1{
+    font-size: 5em;
+}
+
+.featured-posts h2{
+    font-size: 4em;
+}
+.featured-posts h3{
+    font-size: 2.5em;
+    padding: 1rem 0;
+}
+
+.featured-posts img{
+    width: 3rem;
+}
+
+/* Responsive CSS Tablet */
 @media only screen and ((600px <= device-width <=1024px)) {
     body {
         grid-template-columns: repeat(2, 50%);
@@ -55,6 +104,45 @@ body {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    /* page profil user */
+    .userProfilSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0em;
+        margin-bottom: 4rem;
+    }
+    .userProfilSection img{
+        max-width: 25%;
+        border-radius: 50%;
+    }
+    
+    .title-underline{
+        text-decoration: underline;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .featured-posts, .featured-posts article, .featured-posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-posts article a{
+        text-decoration: underline;
+    }
+    
+    .userProfilSection h1{
+        font-size: 3em;
+    }
+
+    .featured-posts h2{
+        font-size: 2em;
+    }
+    .featured-posts h3{
+        font-size: 1.5em;
     }
 }
 
@@ -96,16 +184,44 @@ body {
         border-radius: 1vw;
     }
 
+    /* page profil user */
+    .userProfilSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0em;
+        margin-bottom: 4rem;
+    }
+    .userProfilSection img{
+        max-width: 15%;
+        border-radius: 50%;
+    }
+    
+    .title-underline{
+        text-decoration: underline;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .featured-posts, .featured-posts article, .featured-posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-posts article a{
+        text-decoration: underline;
+    }
+    
+    
+    .userProfilSection h1{
+        font-size: 2em;
+    }
+
+    .featured-posts h2{
+        font-size: 1.5em;
+    }
+    .featured-posts h3{
+        font-size: 1.5em;
+        padding: 1rem 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
