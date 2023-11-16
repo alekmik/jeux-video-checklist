@@ -32,6 +32,13 @@ body {
     border-image-slice: 1;
 }
 
+#helloUser {
+    color: #11FF00;
+    font-size: 2em;
+    margin-bottom: 4vh;
+    margin-left: 5vw;
+}
+
 @media only screen and ((600x <= device-width <=1024px)) {
     body {
         grid-template-columns: repeat(2, 50%);
