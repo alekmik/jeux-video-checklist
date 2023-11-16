@@ -32,23 +32,20 @@ h1, h2, legend, label, p {
 /* page presentation of one game + checklist of the success */
 .logo {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 .logo img{
-    width: 4rem;
+    width: 5rem;
 }
 .logo .search-bar {
     display: flex;
     align-items: flex-end;
-    height: 3.5rem;
 }
 .logo input {
     height: 2em;
 }
 
-.logo button {
-    font-size: x-large;
-}
 /* end header with searchbar css */
 .gameToDoChecklist{
     display: block;
