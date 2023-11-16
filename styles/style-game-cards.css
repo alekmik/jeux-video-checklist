@@ -32,7 +32,7 @@ body {
     border-image-slice: 1;
 }
 
-@media only screen and ((600x <= device-width <=1024px)) {
+@media only screen and ((600px <= device-width <=1024px)) {
     body {
         grid-template-columns: repeat(2, 50%);
     }
