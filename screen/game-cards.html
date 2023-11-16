@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/style-game-cards.css">
 </head>
 
-<body>
+<body onload="getNewUserInfo()">
     <!-- Header -->
     <section class="nav-bar">
         <a href="../index.html">
@@ -19,6 +19,8 @@
             <button>🔎</button>
         </div>
     </section>
+
+    <p class="hello user"> Hello baby </p>
     <div class="display-games-fav">
         <!---i did the go to game function so we can connect the checklist with images, need to check ----->
         <div class="card-cover-game gradient" onclick="goToGame('feature-checklist-game-ghost-of-tsushima.html')">
@@ -39,6 +41,7 @@
     </div>
 
     <script src="../script/script.js"></script>
+    <script src="../script/login.js"></script>
 </body>
 
 </html>
