@@ -39,6 +39,13 @@ body {
 
 
 
+
+#helloUser {
+    color: #11FF00;
+    font-size: 2em;
+    margin-bottom: 4vh;
+    margin-left: 5vw;
+}
 /* Alek : CSS profil utilisateur */
 .userProfilSection{
     display: flex;
@@ -87,6 +94,7 @@ body {
 
 /* Responsive CSS Tablet */
 @media only screen and ((600px <= device-width <=1024px)) {
+
     body {
         grid-template-columns: repeat(2, 50%);
     }
